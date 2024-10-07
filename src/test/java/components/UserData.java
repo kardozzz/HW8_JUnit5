@@ -1,7 +1,7 @@
 package components;
 
 public class UserData {
-    private String username;
+    private static String username;
     private String password;
 
     // Конструктор

@@ -1,6 +1,6 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
-import org.junit.jupiter.api.AfterEach;
+
+
 import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
@@ -11,12 +11,11 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://www.saucedemo.com";
         Configuration.browser = "chrome";
-        Configuration.holdBrowserOpen = true;
 
     }
-    @AfterEach
-    void closeDriver() {
-        WebDriverRunner.closeWindow();
-    }
+//    @AfterEach
+//    void closeDriver() {
+//        WebDriverRunner.closeWindow();
+//    }
 
 }
