@@ -1,6 +1,7 @@
 package components;
 
 import com.codeborne.selenide.SelenideElement;
+import models.UserData;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;

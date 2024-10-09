@@ -1,11 +1,13 @@
 import com.codeborne.selenide.Configuration;
 
 
+import com.codeborne.selenide.WebDriverRunner;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
     @BeforeAll
-    static void beforceAll() {
+    static void setup() {
 
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
@@ -13,9 +15,9 @@ public class TestBase {
         Configuration.browser = "chrome";
 
     }
-//    @AfterEach
-//    void closeDriver() {
-//        WebDriverRunner.closeWindow();
-//    }
+    @AfterEach
+    void teardown() {
+        WebDriverRunner.closeWindow();
+    }
 
 }

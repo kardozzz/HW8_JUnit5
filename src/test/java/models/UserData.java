@@ -1,4 +1,4 @@
-package components;
+package models;
 
 public class UserData {
     private static String username;

@@ -1,15 +1,13 @@
 import components.AutorizationPage;
 import components.CheckoutYourInformationPage;
-import components.UserData;
+import models.UserData;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
-import utils.RandomUtils;
 
-import java.util.List;
 import java.util.stream.Stream;
 
 public class SwagLabsTests extends TestBase {
